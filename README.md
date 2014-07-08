@@ -26,4 +26,12 @@ You can scrape the contents of this raw url like so:
 {{ /url|scrape }}
 ```
 
+or using the plugin syntax:
+
+```
+{{ scrape url="{ url }" }}
+  {{ content }}
+{{ /scrape }}
+```
+
 If there are any YAML variables, those will be made available as well.
