@@ -14,22 +14,22 @@ Take the following page variable:
 
 ```
 ---
-url: https://raw.githubusercontent.com/jackmcdade/statamic-modifier-scrape/master/README.md
+github_url: https://raw.githubusercontent.com/jackmcdade/statamic-modifier-scrape/master/README.md
 ---
 ```
 
 You can scrape the contents of this raw url like so:
 
 ```
-{{ url|scrape }}
+{{ github_url|scrape }}
   {{ content }}
-{{ /url|scrape }}
+{{ /github_url|scrape }}
 ```
 
 or using the plugin syntax:
 
 ```
-{{ scrape url="{ url }" }}
+{{ scrape url="{ github_url }" }}
   {{ content }}
 {{ /scrape }}
 ```
